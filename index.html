@@ -1,0 +1,430 @@
+<html>
+
+<head>
+    <style type="text/css">
+        .bigBox_header {
+            height: auto;
+            padding: 0px 0px 20px 0px;
+            /* width: 100%; */
+            background-color: #02B9C1;
+            box-shadow: 4px grey;
+        }
+
+        .subhead {
+            padding: 10px;
+        }
+
+        .bigBox {
+            height: 200px;
+            width: 250px;
+            background: white;
+            border-radius: 10px;
+            margin-left: 15px;
+            color: rgb(65, 187,193);
+            padding-right: 15px;
+            padding-left: 15px;
+        }
+
+        .circle {
+            background: rgb(171, 224, 245);
+            height: 40px;
+            width: 40px;
+            border-radius: 40px;
+            border: 5px solid #02B9C1;
+            margin-top: -215px;
+            line-height: 40px;
+            text-align: center;
+            color: rgb(69, 170, 209);
+            font-weight: bold;
+        }
+
+        .smallBox {
+            display: inline-block;
+            position: relative;
+            height: 40px;
+            width: 225px;
+            text-align: center;
+            line-height: 40px;
+            border-top-right-radius: 20px;
+            margin: -60px 0px 0px 19px;
+            font-size: 3mm;
+            color: white;
+            font-weight: bold;
+            background: -webkit-radial-gradient(-20px, circle closest-corner, rgba(0, 0, 0, 0) 55px, rgb(65, 186, 193) 57px);
+        }
+
+        .row {
+            border: 1px solid #4CEEF9;
+            height: 40%;
+            width: 75%;
+            border-radius: 20px;
+            display: flex;
+            margin-left: 180px;
+        }
+
+        .verticalLine {
+            border-left: 1px solid #4CEEF9;
+            height: 45px;
+            margin-left: 650px;
+        }
+
+        #header_text {
+            height: 28px;
+            margin-left: 450px;
+            color: white;
+        }
+
+        .logo {
+            margin-top: 20px;
+            margin-left: 560px;
+        }
+
+        #smallBox2 {
+            background: -webkit-radial-gradient(-20px, circle closest-corner, rgba(0, 0, 0, 0) 55px, rgb(34, 110, 117) 57px)
+        }
+
+        #circle2 {
+            background-color: white;
+        }
+
+        #bigBox2 {
+            background: rgb(171, 224, 245);
+            color: rgb(34, 110, 117);
+        }
+
+        .bigBox3 {
+            margin-top: 50px;
+        }
+
+        .fincity {
+            height: 21px;
+        }
+
+        #logo2 {
+            margin-left: 100px;
+            float: left;
+        }
+
+        #map {
+            height: 296px;
+            width: 319px;
+        }
+
+        .grid-container {
+            display: grid;
+            float: left;
+            margin-top: 40px;
+            margin-left: 40px;
+        }
+
+        .grid-container>div {
+            font-size: 30px;
+            grid-row-gap: 50px;
+        }
+
+        .text {
+            font-family: sans-serif;
+            font-size: 12px;
+            font-weight: 400;
+            color: rgb(32, 64, 46);
+        }
+
+        .addr {
+            display: grid;
+            grid-template-columns: 55px 100px;
+        }
+
+        #phone {
+            margin-top: 27px;
+        }
+
+        .address {
+            margin-left: 140px;
+        }
+
+        .button {
+            background-color: rgb(65, 186, 193);
+            border: none;
+            color: white;
+            text-align: center;
+            display: inline-block;
+            font-size: 12px;
+            text-align: center;
+            height: 50px;
+            width: 130px;
+            border-radius: 5px;
+            margin-top: 15px;
+        }
+
+        .cibil {
+            height: 50px;
+            width: 80px;
+            margin-top: 90px;
+        }
+
+        .fincity {
+            height: 25px;
+        }
+
+        @media (max-width: 768px) {
+            #logo2 {
+                margin-left: 50px;
+                height: 60%;
+                width: 60%;
+            }
+
+            #row {
+                width: 70%;
+                height: auto;
+                margin-left: 70px;
+                display: grid;
+                grid-template-columns: 250px;
+                grid-template-rows: 250px 250px 250px;
+            }
+            .addr {
+                display: grid;
+            }
+
+            #header_text {
+                margin-left: 0px;
+            }
+            .verticalLine {
+                margin-left: 220px;
+            }
+
+            .bigBox_header {
+                height: auto;
+                padding: 0px 0px 20px 0px;
+            }
+
+            .logo {
+                margin: 20px 0px 0px 150px;
+            }
+        }
+        @media (min-width: 770px) and (max-width: 992px) {
+            #logo2 {
+                margin-left: 200px;
+                height: 60%;
+                width: 60%;
+            }
+
+            .verticalLine {
+                margin-left: 350px;
+            }
+
+            #row {
+                width: 45%;
+                height: auto;
+                margin-left: 180px;
+                display: grid;
+                grid-template-columns: 250px;
+                grid-template-rows: 250px 250px 250px;
+            }
+            .addr {
+                display: grid;
+            }
+
+            #header_text {
+                margin-left: 120px;
+            }
+
+            .bigBox_header {
+                height: auto;
+                padding: 0px 0px 20px 0px;
+            }
+
+            .logo {
+                margin: 20px 0px 0px 260px;
+            }
+
+
+            .footer {
+                display: grid;
+                text-align: center;
+                grid-template-columns: 350px 350px;
+                clear: both;
+            }
+
+            .footerDetails {
+                display: grid;
+                grid-template-columns: 260px 260px 260px;
+                clear: both;
+            }
+        }
+
+        @media (max-width: 1200px) and (min-width: 992px) {
+
+            .verticalLine {
+                margin-left: 500px;
+            }
+
+            .logo {
+                margin: 20px 0px 0px 420px;
+            }
+
+            #row {
+                width: 95%;
+                margin: 0px 0px 0px 30px;
+            }
+            .addr {
+                display: grid;
+            }
+
+            #header_text {
+                margin-left: 290px;
+            }
+
+            .bigBox_header {
+                height: auto;
+                width: auto;
+                padding: 0px 0px 20px 0px;
+            }
+
+            .footer {
+                display: grid;
+                text-align: center;
+                grid-template-columns: 200px 200px;
+            }
+
+            .footerDetails {
+                display: grid;
+                grid-template-columns: 200px 200px 200px;
+            }
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+
+<div>
+    <div class="bigBox_header">
+        <div>
+            <img class="logo" src="MOCK UP (1).JPG" />
+            <h2 id="header_text"> MAKE YOURSELF AT HOME IN 6 STEPS</h2>
+        </div>
+
+        <div class="row" id="row">
+            <div class="subhead">
+                <p class="bigBox"><br><br><br>Sign up to avail products from across diverse loans,properties, and being
+                    connected to over 50 landers.In addition, check your Credit Score without impacting it,and get the
+                    best loan offer suited to your needs. </p>
+                <p class="circle">1</p>
+                <p class="smallBox"> Sign Up & Check Credit Score</p>
+            </div>
+            <div class="subhead">
+                <p class="bigBox"><br><br><br>Update your PAN Card with us so that we can perform a soft-check for your
+                    Credit Score. Upload a copy from your gallery anytime, anywhere.</p>
+                <p class="circle">2</p>
+                <p class="smallBox"> PAN Card Update</p>
+            </div>
+            <div class="subhead">
+                <p class="bigBox"><br><br><br> Update your address proof by uploading either your Driving License /
+                    Registered Rent Agreement / Uility Bil. You will, in no time, be made a loan offer to get closer to
+                    your dream home.</p>
+                <p class="circle">3</p>
+                <p class="smallBox">Address Proof Update</p>
+            </div>
+        </div>
+        <div class="verticalLine"></div>
+        <div class="row" id="row">
+            <div class="subhead">
+                <p class="bigBox" id="bigBox2"><br><br><br> We are delighted to offer you a loan for the purchase of
+                    your dream home. You are now only two steps away. you will be required to e sign the offer in
+                    acceptance, and will be provided with a Provisional Sanction Letter.</p>
+                <p class="circle" id="circle2">A</p>
+                <p class="smallBox" id="smallBox2"> Loan Offer</p>
+            </div>
+            <div class="subhead">
+                <p class="bigBox" id="bigBox2"><br><br><br> We are glad to know of your acceptance of our loan offer.
+                    Please e-sign the same, so that we can proceed with sharing a Provisional Sanction Letter</p>
+                <p class="circle" id="circle2">B</p>
+                <p class="smallBox" id="smallBox2">E-Sign</p>
+            </div>
+            <div class="subhead">
+                <p class="bigBox" id="bigBox2"><br><br><br> Congratulations! You are now officially one step away from
+                    realising what you dreamt Here's presenting a Provisional Sanction Letter to be produced at the bank
+                    and have them process your loan</p>
+                <p class="circle" id="circle2">C</p>
+                <p class="smallBox" id="smallBox2">Sanction Letter</p>
+            </div>
+        </div>
+
+    </div>
+    <div class="bigBox3">
+        <div id="logo2">
+            <img src="fincity.png" class="fincity" />
+            <p>
+                <img src="map.JPG" id="map" />
+            </p>
+        </div>
+    </div>
+<div class="footerDetails">
+    <div class="grid-container">
+        <div>
+            <p class="text"> <b>Email ID : </b> contact@fincity.com </p>
+        </div>
+        <div>
+            <p class="text" id="phone"> <b>Phone : </b> 080-40828400 </p>
+        </div>
+        <div class="addr">
+            <p class="text"> <b>Address: </b></p>
+            <p class="text"> 33/1, 3rd Floor, Vittal Mallya Road, (Near UB City), Bangalore 560001</p>
+        </div>
+
+    </div>
+    <div class="grid-container" class="address">
+        <div>
+            <p class="text"> <b>Company</b></p>
+        </div>
+        <div>
+            <p class="text"> About Us </p>
+        </div>
+        <div>
+            <p class="text"> Term of Use </p>
+        </div>
+        <div>
+            <p class="text"> Privacy Policy </p>
+        </div>
+    </div>
+    <div class="grid-container" class="address product">
+        <div>
+            <p class="text"> <b>Products</b></p>
+        </div>
+        <div>
+            <p class="text"> Home Loan </p>
+        </div>
+        <div>
+            <p class="text"> Salaried </p>
+        </div>
+        <div>
+            <p class="text"> Self-Employed </p>
+        </div>
+        <div>
+            <p class="text"> Pradhan Mantri Awas Yojana </p>
+        </div>
+    </div>
+</div>
+    <div class="footer">
+    <div class="grid-container" class="address">
+        <div>
+            <button class="button">Career</button>
+        </div>
+        <div>
+            <img src="cibil.png" class="cibil" />
+        </div>
+    </div>
+    <div class="grid-container" class="address">
+        <div>
+            <button class="button">Bussiness Partner <br>Registration</button>
+        </div>
+        <div >
+               <img src="experion.png" class="cibil"/>
+        </div>
+    </div>
+    </div>
+
+
+
+</body>
+
+</html>
